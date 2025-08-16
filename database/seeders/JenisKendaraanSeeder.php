@@ -1,0 +1,28 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+class JenisKendaraanSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        //
+        DB::table('jenis_kendaraan')->insert([
+            'nama_jenis' => 'truk',
+        ]);
+
+        DB::table('jenis_kendaraan')->insert([
+            'nama_jenis' => 'van',
+        ]);
+
+        DB::table('jenis_kendaraan')->insert([
+            'nama_jenis' => 'motor',
+        ]);
+    }
+}
