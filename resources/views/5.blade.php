@@ -72,11 +72,11 @@
     }).addTo(map);
 
     // Fetch all armada and add to map
-    var armadas = @json($armada);
+    var locations = @json($locations);
 
-    armadas.forEach(function(armada) {
-        L.marker([armada.latitude, armada.longitude]).addTo(armada)
-            .bindPopup(armada.nomor_armada);
+    locations.forEach(function(location) {
+        L.marker([location.latitude, location.longitude]).addTo(map)
+            .bindPopup(location.nomor_armada);
     });
 </script>
 <script>

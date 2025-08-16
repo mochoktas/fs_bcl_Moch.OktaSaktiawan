@@ -15,10 +15,10 @@ class TestController extends Controller
 
     public function index_no_5()
     {
-        $armada = Armada::all();
+        $locations = Armada::all();
         // dd($location);
 
-        return view('5', compact('armada'));
+        return view('5', compact('locations'));
     }
     public function store_no_5(Request $request)
     {
